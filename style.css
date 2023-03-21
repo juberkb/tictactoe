@@ -1,0 +1,113 @@
+body{
+    background-color: #333;
+}
+button{
+
+    position: relative;
+display: block;   
+top: 400px;  
+margin-top: 20px;
+}
+
+h2{
+    position: relative;
+    display: inline;
+    top: 600;
+}
+
+td {
+    border: 2px solid skyblue;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 70px;
+    cursor: pointer;
+    color: white;
+    */
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    top: 50px;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+.endgame {
+    display: none;
+    width: 200px;
+    top: 120px;
+    background-color: rgba(205, 133, 63, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+
+ /* fade screen (splitting screen) start */
+
+
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    text-shadow:  0px 10px 5px whitesmoke;
+    color: black;
+    transition: 2s;
+}
+
+
+.kb{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+   transform: translate(-50%, -50%);
+    transition: 3s;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+.logo.active{
+    bottom: 0px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+.logo.fade{
+    bottom: 150px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+/* fade screen (splitting screen) start */
